@@ -75,9 +75,16 @@ object Lab1 extends jsy.util.JsyApplication {
 
   /* Exercises */
 
-  def abs(n: Double): Double = throw new UnsupportedOperationException
-
-  def xor(a: Boolean, b: Boolean): Boolean = throw new UnsupportedOperationException
+  def abs(n: Double): Double = {
+    if (n<0) -n else n
+  }
+  
+  def xor(a: Boolean, b: Boolean): Boolean = {
+    if (a = true)
+		  if (b = true) false else true
+  	else
+		  if (b = true) true else false
+  }
 
   def repeat(s: String, n: Int): String = throw new UnsupportedOperationException
   
